@@ -6,7 +6,7 @@ url = system.url;
 
 /* загружаем список заказов */
 mongoClient.connect(url, function(err, db){
-        let collection = db.collection("orderStatus");
+        var collection = db.collection("orderStatus");
         collection.insertMany([
             {id:1, name: "Заказано"},
             {id:2, name: "Готовится"},
@@ -19,7 +19,7 @@ mongoClient.connect(url, function(err, db){
 
 /* загружаем меню */
 mongoClient.connect(url, function(err, db){
-    let collection = db.collection("menu");
+    var collection = db.collection("menu");
     console.log("menu:", menu);
     collection.insertMany(menu);
     db.close();
