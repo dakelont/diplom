@@ -172,6 +172,8 @@ io.on('connection', function(socket){
 	//socket.on('disconnect', function(){	});
 });
 
-http.listen(3000, function(){
-    console.log('Start server http://localhost:3000/');
+let port = process.env.PORT || 3000;
+
+http.listen(port, function(){
+    console.log('Start server http://localhost:' + port + '/');
 });
