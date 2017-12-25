@@ -19,6 +19,7 @@ mongoClient.connect(url, function(err, db){
 
 /* загружаем меню */
 mongoClient.connect(url, function(err, db){
+        console.log("menu=====");
     var collection = db.collection("menu");
     console.log("menu:", menu);
     collection.insertMany(menu);
