@@ -15,7 +15,6 @@
     "bower": "^1.8.2",
     "express": "^4.16.2",
     "http-server": "^0.10.0",
-    "materialize-css": "^0.100.2",
     "mongodb": "^2.2.33",
     "netology-fake-drone-api": "^1.0.1",
     "request": "^2.83.0",
